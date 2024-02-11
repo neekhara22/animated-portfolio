@@ -74,7 +74,7 @@ const Hero =()=>
             <motion.div variants={sliderVariants} className="slidingTextContainer" initial="initial" animate="animate">
             Backend & UI Developer</motion.div>
            <motion.div className="imageContainer" variants={imageVariants} initial="initial" animate="animate">
-            <motion.img variants={imageVariants} src="/akash.png" alt=""/>
+            <motion.img variants={imageVariants} src="/Akash.png" alt=""/>
             </motion.div> 
         </div>
     )
