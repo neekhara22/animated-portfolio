@@ -4,6 +4,7 @@ import { useRef } from "react";
 const variants={
     initial:{
         x:-500,
+        // x:-10,
         opacity:0,
         y:100
     },
@@ -18,12 +19,12 @@ const variants={
     }
 }
 const Services = ()=>{
-    // const ref=useRef()
-    // const isInView=useInView(ref,{margin:"-100px"})
+    const ref=useRef()
+    const isInView=useInView(ref,{margin:"-100px"})
     return <motion.div className="services" variants={variants} initial="initial" 
-    whileInView="animate"
-    // animate="animate"
-    // ref={ref}
+    // whileInView="animate"
+    animate="animate"
+    ref={ref}
     // animate={isInView &&"animate"}
     >
     <motion.div className="textContainer" variants={variants}>
